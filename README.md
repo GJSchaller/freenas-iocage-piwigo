@@ -1,8 +1,11 @@
 # freenas-iocage-piwigo
  Script to create an iocage jail on Free/TrueNAS for the latest [PiWigo](https://piwigo.org/) release, including Caddy 2.x and MariaDB 10.3
 
+# Fork Information
+ This fork updates PHP to 8.2, and creates several local folders under (Pool)/piwigo including Galleries, Uploads, Config, DB, and Scrips, which is a space outside the Web root to keep scrips to run for maintenance on your Gallery.
+
 # Installation
-Change to a convenient directory, clone the repository using `git clone https://github.com/danb35/freenas-iocage-piwigo`, change to the freenas-iocage-piwigo directory, and create a configuration file called `piwigo-config` with your favorite text editor (if you don't have a favorite text editor, `nano` is a good choice--run `nano piwigo-config`).  Then run the script with `script piwigo.log ./piwigo-jail.sh`.
+Change to a convenient directory, clone the repository using `git clone https://github.com/GJSchaller/freenas-iocage-piwigo`, change to the freenas-iocage-piwigo directory, and create a configuration file called `piwigo-config` with your favorite text editor (if you don't have a favorite text editor, `nano` is a good choice--run `nano piwigo-config`).  Then run the script with `script piwigo.log ./piwigo-jail.sh`.
 
 ## Configuration options
 In its minimal form, the configuration file would look like this:
